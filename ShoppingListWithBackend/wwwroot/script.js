@@ -14,7 +14,7 @@ async function UpdateView() {
                 id="shoppingInput"
                 value="${model.inputs.text || ''}"
             />
-            <button onclick="CreateListItem()">Add to list</button>
+            <button id="addBtn" onclick="CreateListItem()">Add to list</button>
             <ol id="shoppingList">
             </ol>
         </div>
@@ -52,7 +52,7 @@ function renderShoppingList() {
     shoppingList.innerHTML = '';
     model.textObjects.forEach(item => {
         const newListItem = document.createElement('li');
-        newListItem.innerHTML = `<button class="deleteBtn" onclick="removeListItem('${item.id}')">Delete</button> ${item.text}`;
+        newListItem.innerHTML = `<button class="deleteBtn" onclick="removeListItem('${item.id}')">Delete</button> <label>${item.text}</label>`;
         shoppingList.appendChild(newListItem);
     });
 }

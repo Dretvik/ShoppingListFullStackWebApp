@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ol {
     list-style: none;
@@ -11,20 +12,31 @@ ol {
 li {
     margin: 10px;
 }
+#shoppingInput {
+    color: white;
+    text-align: center;
+    background-color: gray;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+label {
+    margin-left: 20px;
+    font-size: 20px;
+}
 #app {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vh;
 }
+#addBtn {
+    height: 40px;
+}
 .deleteBtn {
     background-color: tomato;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    /* width: 20px;
-    height: 20px; */
-}
-.isDone {
-    width: 20px;
-    height: 20px;
+    font-weight: bolder;
+    height: 40px;
 }
